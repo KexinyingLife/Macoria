@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -11,11 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5E688DDD2E5DF851003CC1FD /* Macoria */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Macoria;
-			sourceTree = "<group>";
-		};
+		5E688DDD2E5DF851003CC1FD /* Macoria */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Macoria; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +82,7 @@
 				};
 			};
 			buildConfigurationList = 5E688DD62E5DF851003CC1FD /* Build configuration list for PBXProject "Macoria" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,7 +91,6 @@
 			);
 			mainGroup = 5E688DD22E5DF851003CC1FD;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 5E688DDC2E5DF851003CC1FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
