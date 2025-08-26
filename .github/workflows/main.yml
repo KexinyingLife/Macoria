@@ -1,0 +1,37 @@
+name: Build and Release Macoria
+
+on:
+  push:
+    tags:
+      - 'v*'   # 当推送 tag 时触发，比如 v1.0.0
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Build app (Universal Binary)
+        run: |
+          xcodebuild -scheme Macoria \
+            -configuration Release \
+            -derivedDataPath build \
+            -arch arm64 -arch x86_64 \
+            clean build
+
+      - name: Package app into zip
+        run: |
+          cd build/Build/Products/Release
+          zip -r Macoria.zip Macoria.app
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/Build/Products/Release/Macoria.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
