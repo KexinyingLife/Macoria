@@ -52,7 +52,7 @@
 
 ## 🚀 开始使用
 ```bash
-git clone https://github.com/你的用户名/Macoria.git
+git clone https://github.com/KexinyingLife/Macoria.git
 cd Macoria
 open Macoria.xcodeproj
 ```
