@@ -82,7 +82,7 @@
 				};
 			};
 			buildConfigurationList = 5E688DD62E5DF851003CC1FD /* Build configuration list for PBXProject "Macoria" */;
-			compatibilityVersion = "Xcode 15.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
